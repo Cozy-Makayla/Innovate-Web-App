@@ -1,0 +1,313 @@
+body {
+    background-color: rgb(125, 0, 125);
+}
+
+* {
+    color: azure;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*:link{
+    text-decoration: none;
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-variant: small-caps;
+    margin: 0px;
+    color: azure;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 16pt;
+}
+
+.page-title{
+    display: flex;
+    justify-content: center;
+    font-size: 72pt;
+    font-style: bold;
+    font-variant: small-caps;
+    margin: 0px;
+    color: azure;
+    background-color: rgb(25, 0, 25);
+}
+
+.text_black{
+    color: black;
+}
+
+.nav_header{
+    display: flex;
+    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content:space-evenly;
+    background-color: rgb(75, 0, 75);
+    border-color: rgb(25, 0, 25);
+}
+
+.nav_link{
+    display: flex;
+    font-style:unset;
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav_link:hover{
+    display: flex;
+    font-style:unset;
+    background-color: rgb(50, 0, 50);
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.p_pad{
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+.navbar{
+    padding: 8px;
+    margin: 0px;
+    background-color: rgb(75, 0, 75);
+    border-color: rgb(25, 0, 25);
+}
+
+.navbar-toggler{
+    background-color: azure;
+    color: rgb(75, 0, 75);
+}
+
+.navbar-brand{
+    color: azure;
+    font-variant: small-caps;
+}
+
+.nav-link{
+    color: azure;
+    padding: 5px;
+    justify-self: center;
+}
+
+.dropdown-toggle{
+    color: azure;
+}
+
+.dropdown-menu{
+    color: azure;
+    background-color: rgb(25, 0, 25);
+}
+
+.dropdown-item{
+    color: azure;
+    background-color: rgb(25, 0, 25);
+}
+
+.form-control{
+    color: azure;
+    background-color: rgb(25, 0, 25);
+}
+
+.btn{
+    color: azure;
+    background-color: rgb(25, 0, 25);
+    border-color: azure;
+}
+
+.banner-head{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.banner-text{
+    color: azure;
+    background-color: rgb(75, 0, 75);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.display-4{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.display-5{
+    color: azure;
+    background-color: rgb(25, 0, 25);
+    border-color: azure;
+    margin-bottom: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.lead{
+    color: azure;
+    background-color: rgb(75, 0, 75);
+    border-color: azure;
+    margin-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.d-md-flex{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width:fit-content;
+}
+
+.mar-pad{
+    margin: 15px;
+    padding: 15px;
+}
+
+.mar{
+    margin: 15px;
+}
+
+.pad{
+    padding: 15px;
+}
+
+.light-text{
+color: azure;
+background-color: rgb(75, 0, 75);
+}
+
+.card-header {
+    background-color: rgb(75, 0, 75);
+}
+
+.rounded-3 {
+    background-color: rgb(75, 0, 75);
+    border-radius: 15px;
+}
+
+.bg-dark{
+    background-color: rgb(75, 0, 75);
+}
+
+.bg-lightp{
+    background-color: rgb(125, 0, 125);
+}
+
+.text-mute{
+    color: rgb(200, 200, 200);
+}
+
+.price-text{
+    font-size: 40pt;
+}
+
+.div-center{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div-center-row{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.link-align{
+    margin-top: 30px;
+}
+
+.tri-col{
+    columns: 3;
+}
+
+.div-center-spacer{
+    margin: 10vw;
+    margin-top: 1vw;
+}
+
+.rounded-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.rounded-bottom{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.spacer{
+    margin-bottom: 250px;
+}
+
+.central{
+    max-height: 400px;
+}
+
+.no-margin-top{
+    margin-top: 0px;
+}
+
+.price{
+    font-size: 25pt;
+    padding-right: 25px;
+    margin-bottom: 0px;
+}
+
+.no-pad-vert{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+}
+
+.hide-btn{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.message-box{
+    padding-left: 15px;
+}
+@media (orientation: portrait){
+    .banner-head{
+        font-size: 34pt;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .price-text{
+        font-size: 34pt;
+    }
+    
+    .tri-col{
+        columns: 1;
+    } 
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+    <title></title>
+</head>
+
+<body>
+    {% block title %}
+    {% endblock %}
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navigation Bar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="{{ url_for('views.home') }}" class="nav-link">Home</a>
+                        <a href="{{ url_for('views.product') }}" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Extras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a href="{{ url_for('views.about') }}" class="nav-link">About</a>
+                                <a href="{{ url_for('views.contacts') }}" class="nav-link">Contact Us</a>
+                                <a href="{{ url_for('views.message') }}" class="nav-link">Message Centre</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/images/sign-up-banner.jpg" class="banner-image" alt="Nail polish product listings">
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="banner-head bg-dark rounded-top">Coming soon</h1>
+                            <p class="banner-text">and receive 10% off your first purchase</p>
+                            <p><a class="btn btn-lg btn-primary" href="{{ url_for('views.home') }}">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/about-banner.jpg" class="banner-image" alt="Nail polish product listings">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="banner-head bg-dark rounded-top">Our commitments</h1>
+                            <p class="banner-text">learn more about our commitments to equality and sustainability</p>
+                            <p><a class="btn btn-lg btn-primary" href="{{ url_for('views.about') }}">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/product-banner.jpg" class="banner-image" alt="Nail polish product listings">
+                    <div class="container">
+                        <div class="carousel-caption text-end banner-image">
+                            <h1 class="banner-head bg-dark rounded-top">The product catalogue</h1>
+                            <p class="banner-text">Browse our extensive catalogue</p>
+                            <p><a class="btn btn-lg btn-primary" href="{{ url_for('views.product') }}">Browse products</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        {% block main %}
+        {% endblock %}
+    </div>
+    
+    </script>
+</body>
+
+</html>

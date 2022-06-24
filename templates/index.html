@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h1 class="page-title">Home</h1>
+{% endblock %}
+
+{% block main %}
+<div class="container py-3">
+    <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center mar-pad">
+            <h1 class="display-4 fw-normal banner-head bg-dark rounded-top">Our premium membership plans</h1>
+            <p class="fs-5 light-text banner-text">Our upcoming membership plans, coming soon!
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal light-text">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title light-text bg-dark price-text">£0<small class="text-mute price-text">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Join out mailing list</li>
+                            <li>Receive early sales notifactions </li>
+                            <li>10% off your first purchase</li>
+                            <li>Easy one click checkout</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Coming soon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Standard</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title bg-dark price-text">£8<small class="text-mute price-text">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All of the free member advantages</li>
+                            <li>Monthly shipments filled with cosmetics</li>
+                            <li>Access to our member Discord</li>
+                            <li>Free shiping on all orders</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Coming soon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">VIP</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title bg-dark price-text">£15<small class="text-mute price-text">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 light-text">
+                            <li>All free and standard member advantages </li>
+                            <li>Even more cosmetics in your monthly shipment</li>
+                            <li>VIP Discord access</li>
+                            <li>Early access to seasonal sales</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Coming soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4 light-text">Compare plans</h2>
+
+        <div class="table-responsive">
+            <table class="table text-center light-text">
+                <thead>
+                    <tr>
+                        <th style="width: 34%;"></th>
+                        <th style="width: 22%;">Free</th>
+                        <th style="width: 22%;">Standard</th>
+                        <th style="width: 22%;">VIP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start light-text">Mailing list</th>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>✔</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>✔</td>
+                        <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>✔</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start light-text">Sales notifactions</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start light-text">Monthly shipments</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start light-text">Discord access</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start light-text">Free shiping</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start light-text">VIP Shipments</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start light-text">Early seasonal sales</th>
+                        <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg></td>
+                    <td><svg class="bi" width="24" height="24">
+                            <use xlink:href="#check" />
+                        </svg>✔</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h1 class="page-title">Message Center</h1>
+{% endblock %}
+
+{% block main %}
+<div class="div-center">
+    <p class="p_pad div-center bg-dark rounded-bottom rounded-top">
+        This page contains messages from users accessing our webpage, why not leave your message too? 🐵
+    </p>
+</div>
+
+<div class="div-center">
+    <form action="/message" method="POST" class="div-center-row">
+        <input type="text" name="Message" id="task-messsage" class="text_black">
+        <input type="submit" value="Send" class="bg-dark rounded-bottom rounded-top" width="50px">
+    </form>
+    <button onclick="messageHider()" class="bg-dark rounded-bottom rounded-top hide-btn">Show/Hide Messages</button>
+    <div id="message-box" class="mar-pad bg-dark rounded-top rounded-bottom">
+        {% for task in message_list %}
+        <li class="message-box">🐼 Anon-User -  {{ task }}</li>
+        {% endfor%}
+    </div>
+</div>
+{% endblock %}
